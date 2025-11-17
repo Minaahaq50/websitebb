@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MO SPAM - Advanced System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <div class="access-screen" id="accessScreen">
+        <div class="access-container">
+            <div class="logo-container">
+                <div class="mo-spam-logo">
+                    <div class="spam-text">SPAM</div>
+                    <div class="dash-container" id="accessDashContainer">
+                        <div class="dash" id="accessDash"></div>
+                        <div class="dash-text">
+                            <span class="arab-text">ARAB</span><br>
+                            <span class="hacking-text">HACKING</span>
+                        </div>
+                    </div>
+                    <div class="mo-group">
+                        <div class="phone-circle" id="accessPhoneCircle">
+                            <svg class="phone-icon" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div class="letter-m">M</div>
+                    </div>
+                </div>
+                
+                <div class="connection-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            
+            <h2 class="access-title">Identity Verification</h2>
+            
+            <input type="password" class="access-input" id="accessCode" placeholder="Enter Verification Code" autocomplete="off">
+            
+            <button class="access-btn" onclick="verifyAccess()">
+                <i class="fas fa-unlock"></i>
+                Confirm Access
+            </button>
+            
+            <p class="access-error" id="accessError">Invalid Verification Code</p>
+            
+            <div class="contact-info">
+                <a href="https://wa.me/201032811141" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Purchase & Grant Access
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <div class="mo-spam-logo">
+                        <div class="spam-text">SPAM</div>
+                        <div class="dash-container" id="headerDashContainer">
+                            <div class="dash" id="headerDash"></div>
+                            <div class="dash-text">
+                                <span class="arab-text">ARAB</span><br>
+                                <span class="hacking-text">HACKING</span>
+                            </div>
+                        </div>
+                        <div class="mo-group">
+                            <div class="phone-circle" id="headerPhoneCircle">
+                                <svg class="phone-icon" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="letter-m">M</div>
+                        </div>
+                    </div>
+                    
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                        <span>Advanced System Ready</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <div class="control-panel">
+                <h2 class="panel-title">
+                    <i class="fas fa-sliders-h"></i>
+                    Control Panel
+                </h2>
+                
+                <div class="phone-input-container">
+                    <div class="phone-number-container">
+                        <label class="form-label">Target Phone Number</label>
+                        <input type="tel" class="form-input" id="targetNumber" placeholder="Enter phone number">
+                    </div>
+                    
+                    <div class="country-code-container">
+                        <label class="form-label">Country Code</label>
+                        <select class="form-select" id="countryCode">
+                            <option value="20">Egypt (+20)</option>
+                            <option value="970">Palestine (+970)</option>
+                            <option value="966">Saudi Arabia (+966)</option>
+                            <option value="971">UAE (+971)</option>
+                            <option value="973">Bahrain (+973)</option>
+                            <option value="962">Jordan (+962)</option>
+                            <option value="965">Kuwait (+965)</option>
+                            <option value="968">Oman (+968)</option>
+                            <option value="974">Qatar (+974)</option>
+                            <option value="963">Syria (+963)</option>
+                            <option value="961">Lebanon (+961)</option>
+                            <option value="964">Iraq (+964)</option>
+                            <option value="967">Yemen (+967)</option>
+                            <option value="216">Tunisia (+216)</option>
+                            <option value="213">Algeria (+213)</option>
+                            <option value="212">Morocco (+212)</option>
+                            <option value="218">Libya (+218)</option>
+                            <option value="249">Sudan (+249)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="call-count-container">
+                    <label class="form-label">Call Count (Max 10 daily)</label>
+                    <input type="number" class="form-input" id="callCount" min="1" max="10" value="3">
+                </div>
+                
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="startBtn" onclick="startCalls()">
+                        <i class="fas fa-play"></i>
+                        Start Sending
+                    </button>
+                    
+                    <button class="btn btn-blue" id="pauseBtn" onclick="pauseCalls()" style="display: none;">
+                        <i class="fas fa-pause"></i>
+                        Pause
+                    </button>
+                    
+                    <button class="btn btn-secondary" onclick="resetAll()">
+                        <i class="fas fa-redo"></i>
+                        Reset
+                    </button>
+                </div>
+            </div>
+            
+            <div class="progress-section" id="progressSection">
+                <h2 class="panel-title">
+                    <i class="fas fa-chart-line"></i>
+                    Process Progress
+                </h2>
+                
+                <div class="progress-info">
+                    <span>Progress</span>
+                    <span id="progressText">0%</span>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-box-value" id="successCount">0</div>
+                        <div class="stat-box-label">Success</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-box-value" id="failedCount">0</div>
+                        <div class="stat-box-label">Failed</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-box-value" id="currentRate">0%</div>
+                        <div class="stat-box-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://arab-hacking.com" class="social-link website" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="https://youtube.com/@arabhacking" class="social-link youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://github.com/arabhacking" class="social-link github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/201032811141" class="social-link whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/arabhackiing" class="social-link telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">All rights reserved © 2025 MO SPAM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
