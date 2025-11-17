@@ -420,4 +420,5 @@ function setupLogoInteractions() {
             this.classList.remove('active');
         }, 1000);
     });
+
 }
