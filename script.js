@@ -62,9 +62,9 @@ window.addEventListener('load', function() {
 window.addEventListener('resize', resizeCanvas);
 
 const TWILIO_CONFIG = {
-    accountSid: "AC7880ca59cd69082df28459b683b69c25",
-    authToken: "09d9f1da371f28b0d3bf939f6d9051fa",
-    fromNumber: "+12345162858"
+    accountSid: "AC273e4ecb8131d48af9b3d70b3650e6aa",
+    authToken: "cf7d58a60e541c6d91bb33fd1ce2c8f4",
+    fromNumber: "+12762624165"
 };
 
 const MAX_DAILY_CALLS = 10;
@@ -422,3 +422,4 @@ function setupLogoInteractions() {
     });
 
 }
+
